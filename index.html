@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Matching Game</title>
+   
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+   
+    <div class="container">
+        <header>
+            <h1>Flip Flop Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Moves
+            <span id="minutes"></span>:<span id="seconds"></span>
+
+            <div class="restart">
+        		<i class="fa fa-repeat"></i><span> Restart</span>
+        	</div>
+        </section>
+        <div class="overlay-text visible">
+            Click to Start
+        </div>
+
+        <ul class="deck">     </ul>
+
+        <!--  Modal when the game is won after all matches -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> You found it all!</h1>
+                <h3 class="movesMade"></h3>
+                <h3 class="timeTaken"></h3>
+                <h3 id="starsScored"></h3>
+                <h3> Score     : <input type = "number" NAME ="score" id="sccc" readonly ></h3>
+                <button class="playAgain primary"> Restart </button>
+               
+               <!---- Play Again </button><button class="Highscores"> Highscores </button> -->
+            
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
